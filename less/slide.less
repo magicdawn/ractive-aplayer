@@ -1,0 +1,86 @@
+@theme-color: #800080;
+
+.bar-base{
+  position: relative;
+  background-color: #999;
+  cursor: pointer;
+
+  &.__horizontal{
+    height: 2px;
+    .--bar{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: @theme-color;
+
+      // test
+      width: 0%;
+
+      .--btn{
+        @size: 10px;
+        width: @size;
+        height: @size;
+
+        @border-width: 1px;
+        border: @border-width solid @theme-color;
+
+        position: absolute;
+        left: 100%;
+        margin-left: -(@size / 2 + @border-width);
+        top: 50%;
+        margin-top: -(@size / 2 + @border-width);
+
+        border-radius: 50%;
+        background-color: #fff;
+        cursor: pointer;
+
+        &.__drag,
+        &:hover{
+          background-color: @theme-color;
+        }
+      }
+    }
+  }
+
+  &.__vertical{
+    width: 2px;
+    height: 100px;
+
+    .--bar{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: @theme-color;
+
+      // test
+      height: 50%;
+
+      .--btn{
+        @size: 10px;
+        width: @size;
+        height: @size;
+
+        @border-width: 1px;
+        border: @border-width solid @theme-color;
+
+        position: absolute;
+        left: 50%;
+        margin-left: -(@size / 2 + @border-width);
+        top: 0;
+        margin-top: -(@size / 2 + @border-width);
+
+        border-radius: 50%;
+        background-color: #fff;
+        cursor: pointer;
+
+        &.__drag,
+        &:hover{
+          background-color: @theme-color;
+        }
+      }
+    }
+  }
+}

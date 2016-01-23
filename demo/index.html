@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Aplayer Test</title>
+  <link rel="stylesheet" href="../dist/Aplayer.css">
+</head>
+<body>
+  <div id="app">
+  </div>
+  <script type='text/template' id='template'>
+    <Slide direction='horizontal' />
+    <Slide direction='vertical' />
+  </script>
+
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/ractive/0.7.3/ractive.min.js'></script>
+  <script src='../dist/Aplayer.js'></script>
+  <script>
+    var app = Ractive({
+      el: '#app',
+      template: '#template'
+    });
+  </script>
+</body>
+</html>
