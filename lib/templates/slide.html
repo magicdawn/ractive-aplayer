@@ -1,6 +1,6 @@
 <div class="bar-base __{{ direction }}" on-click='handleBarBaseClick()'>
-  <div class="--bar">
-    <div class="--btn" on-mousedown='handleMousedown()'>
+  <div class="--bar" style='width: {{ value * 100 }}%'>
+    <div class="--btn {{#if draging}}__drag{{/if}}" on-mousedown='handleMousedown()'>
     </div>
   </div>
 </div>
