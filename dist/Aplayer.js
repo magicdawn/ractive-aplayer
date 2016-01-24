@@ -100,21 +100,8 @@ var Slide = Ractive.extend({
 
 Ractive.components.Slide = Slide;
 module.exports = Slide;
-
-function getElLeft(node) {
-  var cur = node;
-
-  // offsetLeft
-  var ret = 0;
-  while (cur && cur.offsetLeft) {
-    ret += cur.offsetLeft;
-    cur = cur.offsetParent;
-  }
-
-  return ret - document.documentElement.scrollLeft - document.body.scrollLeft;
-}
 },{"./templates/slide.html":4}],3:[function(require,module,exports){
-module.exports = "";
+module.exports = "<div class=\"a-player\">\n  <div class=\"--cover\" style='background-image: url(\"http://7xq131.com1.z0.glb.clouddn.com/Preparation.jpg\");'>\n    <div class=\"--btn\">\n    </div>\n  </div>\n  <div class=\"--controler\">\n    <!-- 作者 -->\n    <div class='--info'>\n      ABCD - EFG\n    </div>\n\n    <!-- 歌词 -->\n    <div class=\"--lyric\">\n      hello world\n    </div>\n\n    <!-- pregress -->\n    <div class=\"--status\">\n      <div class=\"--slide\">\n        <Slide />\n      </div>\n      <div class=\"--others\">\n        <span class=\"--time\">\n          12:00 / 12:34\n        </span>\n        <span class=\"--volume\">\n          x\n        </span>\n        <span class=\"--loop-control\">\n          y\n        </span>\n      </div>\n    </div>\n  </div>\n</div>";
 
 },{}],4:[function(require,module,exports){
 module.exports = "<div class=\"bar-base __{{ direction }}\" on-click='handleBarBaseClick()'>\n  <div class=\"--bar\">\n    <div class=\"--btn\" on-mousedown='handleMousedown()'>\n    </div>\n  </div>\n</div>";
