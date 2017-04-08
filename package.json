@@ -19,9 +19,9 @@
   "author": "magicdawn",
   "license": "MIT",
   "devDependencies": {
-    "browserify": "^13.0.0",
-    "fs-extra": "^0.26.4",
-    "glob": "^6.0.4",
+    "browserify": "^14.3.0",
+    "fs-extra": "^2.1.2",
+    "glob": "^7.1.1",
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.5",
     "gulp-load-plugins": "^1.2.0",
@@ -29,8 +29,8 @@
     "less-plugin-autoprefix": "^1.5.1",
     "less-plugin-clean-css": "^1.5.1",
     "minimist": "^1.2.0",
-    "ractive": "^0.7.3",
-    "stringify": "^3.2.0",
+    "ractive": "^0.8.12",
+    "stringify": "^5.1.0",
     "through2": "^2.0.0"
   }
 }
